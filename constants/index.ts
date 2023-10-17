@@ -35,7 +35,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Passed 10th",
+    title: "Passed High School",
     location: "Sitapur, IN",
     description:
       "Completed my high school curriculum, gaining a solid foundation in various subjects and essential skills.",
@@ -76,7 +76,7 @@ export const projectsData = [
     imageUrl: realtorImg,
   },
   {
-    title: "E commerce Store",
+    title: "ECommerce Store",
     description:
       "A NextJS-based eCommerce store that allows users to order different products. It supports real-time payments using Stripe.",
     tags: ["React", "Next.js", "Sanity", "React Router", "Stripe"],
