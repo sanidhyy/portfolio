@@ -71,7 +71,7 @@ export const projectsData = [
   {
     title: "Realtor",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Buy and rent homes for everyone. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "Chakra UI", "Next.js", "Framer Motion", "React Icons"],
     imageUrl: realtorImg,
   },
