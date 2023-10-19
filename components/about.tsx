@@ -1,7 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+import SectionHeading from "./section-heading";
+
 const About = () => {
   return (
-    <section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40">
-      <h2 className="text-3xl font-medium capitalize mb-8">About me</h2>
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+    >
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After passing out my <b className="font-medium">High School</b>, I
         decided to pursue my passion for programming. I enrolled in a coding
@@ -23,7 +34,7 @@ const About = () => {
         learning about <b className="font-medium">history and philosophy</b>.
         I'm also learning how to play the guitar.
       </p>
-    </section>
+    </motion.section>
   );
 };
 
