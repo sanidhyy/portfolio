@@ -4,7 +4,7 @@ import Project from "./project";
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28">
       <SectionHeading>My projects</SectionHeading>
       <div className="">
         {projectsData.map((project, i) => (
