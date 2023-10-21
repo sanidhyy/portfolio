@@ -12,9 +12,11 @@ const ThemeSwitch = () => {
     if (theme === "light") {
       setTheme("dark");
       window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
     } else {
       setTheme("light");
       window.localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
     }
   };
 
@@ -23,8 +25,13 @@ const ThemeSwitch = () => {
 
     if (localTheme) {
       setTheme(localTheme);
+
+      if (localTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      }
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
+      document.documentElement.classList.add("dark");
     }
   }, []);
 
