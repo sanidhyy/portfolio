@@ -117,7 +117,7 @@ const Contact = () => {
       }}
     >
       <SectionHeading>My contact</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at my{" "}
         <Link className="underline" href="mailto:sanidhya.verma12345@gmail.com">
           e-mail
@@ -126,7 +126,7 @@ const Contact = () => {
       </p>
 
       <form
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
         ref={formRef}
         onSubmit={handleSubmit}
       >
@@ -137,7 +137,7 @@ const Contact = () => {
           value={form.name}
           onChange={handleChange}
           placeholder="Your name"
-          className="h-14 rounded-lg px-4 borderBlack"
+          className="h-14 rounded-lg px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           required
           maxLength={200}
         />
@@ -149,13 +149,13 @@ const Contact = () => {
           value={form.email}
           onChange={handleChange}
           placeholder="Your email"
-          className="h-14 rounded-lg my-4 px-4 borderBlack"
+          className="h-14 rounded-lg my-4 px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           required
           maxLength={100}
         />
 
         <textarea
-          className="h-52 rounded-lg mb-4 borderBlack p-4"
+          className="h-52 rounded-lg mb-4 borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           id="message"
           value={form.message}
@@ -169,7 +169,7 @@ const Contact = () => {
 
         <button
           type="submit"
-          className="group flex max-sm:self-center items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 disabled:scale-100 disabled:bg-opacity-65"
+          className="group flex max-sm:self-center items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 disabled:scale-100 disabled:bg-opacity-65 dark:bg-white dark:bg-opacity-10"
           disabled={loading}
         >
           {loading ? (

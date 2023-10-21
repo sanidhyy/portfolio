@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import SectionHeading from "./section-heading";
 import {
@@ -12,9 +12,11 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 
 import "react-vertical-timeline-component/style.min.css";
+import { useThemeContext } from "@/context/theme-context";
 
 const Experience = () => {
   const { ref } = useSectionInView("Experience", 0.5);
+  const { theme } = useThemeContext();
   const { activeSection } = useActiveSectionContext();
 
   const [isExperienceSectionActive, setIsExperienceSectionActive] =
@@ -35,25 +37,30 @@ const Experience = () => {
             <VerticalTimelineElement
               visible={isExperienceSectionActive}
               contentStyle={{
-                background: "#f3f4f6",
+                background:
+                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                borderRight: "0.4rem solid #9ca3af",
+                borderRight:
+                  theme === "light"
+                    ? "0.4rem solid #9ca3af"
+                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={experience.date}
               icon={experience.icon}
               iconStyle={{
-                background: "#fff",
+                background:
+                  theme === "light" ? "#fff" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
               }}
             >
               <h3 className="font-semibold capitalize">{experience.title}</h3>
               <p className="font-normal !mt-0">{experience.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700">
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {experience.description}
               </p>
             </VerticalTimelineElement>
