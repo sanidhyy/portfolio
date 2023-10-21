@@ -36,7 +36,7 @@ const Contact = () => {
         <input
           type="email"
           placeholder="Your email"
-          className="h-14 rounded-lg border px-4 borderBlack"
+          className="h-14 rounded-lg px-4 borderBlack"
         />
         <textarea
           className="h-52 my-4 rounded-lg borderBlack p-4"

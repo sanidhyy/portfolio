@@ -7,5 +7,5 @@ html {
 }
 
 .borderBlack {
-  @apply border-black/10;
+  @apply border border-black/10;
 }
