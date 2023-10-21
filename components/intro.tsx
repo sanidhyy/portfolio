@@ -10,6 +10,7 @@ import { HiDownload } from "react-icons/hi";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { EXTRA_LINKS } from "@/constants";
 
 export const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
@@ -87,7 +88,7 @@ export const Intro = () => {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <Link
-          href="/Resume-Sanidhya-Verma.pdf"
+          href={EXTRA_LINKS.resume}
           target="_blank"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10"
         >
@@ -95,7 +96,7 @@ export const Intro = () => {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/sanidhya-verma-ab8a38186/"
+          href={EXTRA_LINKS.linkedin}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
@@ -103,7 +104,7 @@ export const Intro = () => {
           <BsLinkedin />
         </Link>
         <Link
-          href="https://github.com/sanidhyy"
+          href={EXTRA_LINKS.github}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"

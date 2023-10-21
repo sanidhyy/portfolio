@@ -1,14 +1,15 @@
 "use client";
 
+import { FormEvent, useRef, useState } from "react";
 import Link from "next/link";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { FormEvent, useRef, useState } from "react";
+import toast from "react-hot-toast";
 
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import emailjs from "@emailjs/browser";
-import toast from "react-hot-toast";
+import { EXTRA_LINKS } from "@/constants";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
@@ -119,7 +120,7 @@ const Contact = () => {
       <SectionHeading>My contact</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at my{" "}
-        <Link className="underline" href="mailto:sanidhya.verma12345@gmail.com">
+        <Link className="underline" href={`mailto:${EXTRA_LINKS.email}`}>
           e-mail
         </Link>{" "}
         or through this form.

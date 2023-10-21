@@ -33,6 +33,14 @@ export const LINKS = [
   },
 ] as const;
 
+export const EXTRA_LINKS = {
+  linkedin: "https://www.linkedin.com/in/sanidhya-verma-ab8a38186/",
+  github: "https://github.com/sanidhyy",
+  resume: "/resume.pdf",
+  source_code: "https://github.com/sanidhyy/portfolio",
+  email: "sanidhya.verma12345@gmail.com",
+} as const;
+
 export const EXPERIENCES_DATA = [
   {
     title: "Passed High School",

@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { EXTRA_LINKS } from "@/constants";
+
 const Footer = () => {
   return (
     <footer className="mb-10 px-4 text-center text-gray-500">
@@ -7,7 +9,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()}-{(new Date().getFullYear() % 100) + 1}{" "}
         <b>Sanidhya</b> | All rights reserved |{" "}
         <Link
-          href="https://github.com/sanidhyy/portfolio"
+          href={EXTRA_LINKS.source_code}
           className="font-semibold"
           target="_blank"
           rel="noreferrer noopener"
