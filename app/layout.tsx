@@ -36,7 +36,12 @@ export default function RootLayout({
             <Footer />
 
             <aside>
-              <Toaster position="top-right" />
+              <Toaster
+                position="top-right"
+                toastOptions={{
+                  className: "dark:bg-white/10 dark:text-white/80",
+                }}
+              />
             </aside>
 
             <aside>
