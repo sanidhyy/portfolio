@@ -6,10 +6,17 @@ import { motion, useTransform } from "framer-motion";
 import { useScroll } from "framer-motion";
 
 import { projectsData } from "@/constants";
+import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
 
-const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  tags,
+  imageUrl,
+  projectUrl,
+}: ProjectProps) => {
   const projectRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: projectRef,
@@ -45,11 +52,17 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
             ))}
           </ul>
         </div>
-        <Image
-          src={imageUrl}
-          alt={title}
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem]
+        <Link
+          href={projectUrl}
+          target="_blank"
+          rel="noreferrer noopener"
+          title="Go to Project"
+        >
+          <Image
+            src={imageUrl}
+            alt={title}
+            quality={95}
+            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem]
          rounded-t-lg shadow-2xl group-even:right-[initial] 
         group-even:-left-40 group-hover:-translate-x-3
          group-hover:translate-y-3 group-hover:-rotate-2
@@ -58,7 +71,8 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
          group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
 
           group-hover:scale-[1.04] transition"
-        />
+          />
+        </Link>
       </div>
     </motion.article>
   );
