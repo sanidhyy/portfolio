@@ -128,6 +128,8 @@ const Contact = () => {
 
       <form
         className="mt-10 flex flex-col dark:text-black"
+        autoComplete="off"
+        autoCapitalize="off"
         ref={formRef}
         onSubmit={handleSubmit}
       >
@@ -141,6 +143,8 @@ const Contact = () => {
           className="h-14 rounded-lg px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           required
           maxLength={200}
+          autoComplete="off"
+          autoCapitalize="off"
         />
 
         <input
@@ -153,6 +157,8 @@ const Contact = () => {
           className="h-14 rounded-lg my-4 px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           required
           maxLength={100}
+          autoComplete="off"
+          autoCapitalize="off"
         />
 
         <textarea
