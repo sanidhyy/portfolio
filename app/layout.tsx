@@ -1,9 +1,7 @@
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import Header from "@/components/header";
 
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
+import { Header, Footer, ThemeSwitch } from "@/components";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
 

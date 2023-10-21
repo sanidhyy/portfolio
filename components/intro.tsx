@@ -12,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { EXTRA_LINKS } from "@/constants";
 
-export const Intro = () => {
+const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -115,3 +115,5 @@ export const Intro = () => {
     </section>
   );
 };
+
+export default Intro;
