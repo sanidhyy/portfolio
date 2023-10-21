@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { experiencesData } from "@/constants";
+import { EXPERIENCES_DATA } from "@/constants";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -32,7 +32,7 @@ const Experience = () => {
       <SectionHeading>My experience</SectionHeading>
 
       <VerticalTimeline lineColor="">
-        {experiencesData.map((experience, i) => (
+        {EXPERIENCES_DATA.map((experience, i) => (
           <React.Fragment key={`experience-${i}`}>
             <VerticalTimelineElement
               visible={isExperienceSectionActive}

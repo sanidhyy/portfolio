@@ -6,7 +6,7 @@ import carhubImg from "@/public/carhub.png";
 import realtorImg from "@/public/realtor.png";
 import ecommerceImg from "@/public/ecommerce.png";
 
-export const links = [
+export const LINKS = [
   {
     name: "Home",
     hash: "#home",
@@ -33,7 +33,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const EXPERIENCES_DATA = [
   {
     title: "Passed High School",
     location: "Sitapur, IN",
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "React.js Bootcamp",
     location: "Lucknow, IN",
     description:
-      "Successfully completed an intensive 1-month React.js Developer Bootcamp. Acquired expertise in React components, state management with Redux, and interacting with RESTful APIs",
+      "Successfully completed an intensive 1-month React.js Developer Bootcamp. Acquired expertise in React components, state management with Redux, and interacting with RESTful APIs.",
     icon: React.createElement(CgWorkAlt),
     date: "2022",
   },
@@ -60,7 +60,7 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const PROJECTS_DATA = [
   {
     title: "CarHub",
     description:
@@ -87,7 +87,7 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
+export const SKILLS_DATA = [
   "HTML",
   "CSS",
   "JavaScript",

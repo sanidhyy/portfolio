@@ -5,10 +5,10 @@ import Image from "next/image";
 import { motion, useTransform } from "framer-motion";
 import { useScroll } from "framer-motion";
 
-import { projectsData } from "@/constants";
+import { PROJECTS_DATA } from "@/constants";
 import Link from "next/link";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof PROJECTS_DATA)[number];
 
 const Project = ({
   title,

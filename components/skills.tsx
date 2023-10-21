@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-import { skillsData } from "@/constants";
+import { SKILLS_DATA } from "@/constants";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -31,7 +31,7 @@ const Skills = () => {
       <SectionHeading>My skills</SectionHeading>
 
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData.map((skill, i) => (
+        {SKILLS_DATA.map((skill, i) => (
           <motion.li
             id="skills"
             key={`skill-${i}`}
