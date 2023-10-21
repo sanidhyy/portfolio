@@ -83,7 +83,7 @@ export const Intro = () => {
         <Link
           href="/Resume-Sanidhya-Verma.pdf"
           target="_blank"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border borderBlack"
         >
           Download Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -92,7 +92,7 @@ export const Intro = () => {
           href="https://www.linkedin.com/in/sanidhya-verma-ab8a38186/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition border border-black/10"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition border borderBlack"
         >
           <BsLinkedin />
         </Link>
@@ -100,7 +100,7 @@ export const Intro = () => {
           href="https://github.com/sanidhyy"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition border border-black/10"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition border borderBlack"
         >
           <FaGithubSquare />
         </Link>
