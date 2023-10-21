@@ -116,3 +116,5 @@ export const SKILLS_DATA = [
   "Django",
   "Framer Motion",
 ] as const;
+
+export const OWNER_NAME = "Sanidhya Kumar Verma";

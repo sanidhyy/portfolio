@@ -1,17 +1,25 @@
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 import { Header, Footer, ThemeSwitch } from "@/components";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
+import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Sanidhya | Personal Portfolio",
-  description: "Sanidhya is a full-stack developer with 4 years of experience.",
+export const metadata: Metadata = {
+  title: `${OWNER_NAME.split(" ")[0]} | Personal Portfolio`,
+  description: `${
+    OWNER_NAME.split(" ")[0]
+  } is a full-stack developer with 4 years of experience.`,
+  authors: {
+    name: OWNER_NAME,
+    url: EXTRA_LINKS.github,
+  },
 };
 
 export default function RootLayout({

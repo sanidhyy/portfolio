@@ -10,7 +10,7 @@ import { HiDownload } from "react-icons/hi";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { EXTRA_LINKS } from "@/constants";
+import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
 
 const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
@@ -34,7 +34,7 @@ const Intro = () => {
           >
             <Image
               src="/profile.png"
-              alt="Sanidhya portrait"
+              alt={`${OWNER_NAME.split(" ")[0]} portrait`}
               width={192}
               height={192}
               quality={95}
@@ -63,8 +63,8 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <b className="font-bold">Hi, I&apos;m Sanidhya.</b> I&apos;m a{" "}
-        <b className="font-bold">full-stack developer</b> with{" "}
+        <b className="font-bold">Hi, I&apos;m {OWNER_NAME.split(" ")[0]}.</b>{" "}
+        I&apos;m a <b className="font-bold">full-stack developer</b> with{" "}
         <b className="font-bold">5+ years</b> of experience. I enjoy building{" "}
         <b className="italic">sites and apps</b>. My focus is{" "}
         <b className="underline">React (Next.js)</b>
