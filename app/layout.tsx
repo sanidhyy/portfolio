@@ -20,6 +20,28 @@ export const metadata: Metadata = {
     name: OWNER_NAME,
     url: EXTRA_LINKS.github,
   },
+  keywords: [
+    "reactjs",
+    "nextjs",
+    "vercel",
+    "react",
+    "portfolio",
+    "portfolio-next",
+    "emailjs",
+    "framer-motion",
+    "react-hot-toast",
+    "react-icons",
+    "react-intersection-observer",
+    "react-vertical-timeline",
+    "tailwindcss",
+    "ui/ux",
+    "js",
+    "javascript",
+    "typescript",
+    "html",
+    "css",
+  ],
+  themeColor: "#F3F4F6",
 };
 
 export default function RootLayout({
