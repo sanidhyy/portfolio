@@ -1,4 +1,5 @@
-"use client";
+// Import necessary dependencies and components.
+"use client"; // This comment indicates that this code should run on the client side in Next.js.
 
 import clsx from "clsx";
 import { motion } from "framer-motion";
@@ -7,12 +8,14 @@ import Link from "next/link";
 import { LINKS } from "@/constants";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
+// Define the Header component.
 const Header = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
   return (
     <header className="z-[999] relative">
+      {/* Stylish background element for the header */}
       <motion.div
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
@@ -38,6 +41,7 @@ const Header = () => {
                 )}
                 href={link.hash}
                 onClick={() => {
+                  // Set the active section and the time of the last click.
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
                 }}
@@ -45,6 +49,7 @@ const Header = () => {
                 {link.name}
 
                 {link.name === activeSection && (
+                  // Visual indicator for the active section.
                   <motion.span
                     layoutId="activeSection"
                     transition={{
@@ -64,4 +69,5 @@ const Header = () => {
   );
 };
 
+// Export the Header component.
 export default Header;

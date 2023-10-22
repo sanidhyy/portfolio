@@ -1,4 +1,5 @@
-"use client";
+// Import necessary dependencies and components.
+"use client"; // This comment indicates that this code should run on the client side in Next.js.
 
 import { FormEvent, useRef, useState } from "react";
 import Link from "next/link";
@@ -11,7 +12,9 @@ import { useSectionInView } from "@/lib/hooks";
 import emailjs from "@emailjs/browser";
 import { EXTRA_LINKS } from "@/constants";
 
+// Define the Contact component.
 const Contact = () => {
+  // Use the useSectionInView custom hook to track when the "Contact" section is in view.
   const { ref } = useSectionInView("Contact");
   const [loading, setLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
@@ -21,34 +24,35 @@ const Contact = () => {
     message: "",
   });
 
+  // Handle form field changes.
   const handleChange = (e: FormEvent) => {
+    // Extract the field name and value from the event.
     const { name, value } = e.target as HTMLInputElement;
-
     setForm({ ...form, [name]: value });
   };
 
-  // validate form on submit
+  // Validate the form on submission.
   const validateForm = (): boolean => {
-    // form fields
+    // Extract form fields.
     const { name, email, message } = form;
 
-    // validate name
+    // Validate the name field.
     if (name.trim().length < 3) {
       toast.error("Invalid Name");
       return false;
     }
 
-    // email regex
-    const email_regex =
+    // Regular expression for email validation.
+    const emailRegex =
       /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    // validate email
-    if (!email.trim().toLowerCase().match(email_regex)) {
+    // Validate the email field.
+    if (!email.trim().toLowerCase().match(emailRegex)) {
       toast.error("Invalid E-mail");
       return false;
     }
 
-    // validate message
+    // Validate the message field.
     if (message.trim().length < 5) {
       toast.error("Invalid Message");
       return false;
@@ -57,14 +61,15 @@ const Contact = () => {
     return true;
   };
 
+  // Handle form submission.
   const handleSubmit = (e: FormEvent) => {
-    // prevent default page reload
+    // Prevent the default page reload.
     e.preventDefault();
 
-    // validate form
+    // Validate the form.
     if (!validateForm()) return false;
 
-    // show loader
+    // Show a loading indicator.
     setLoading(true);
 
     emailjs
@@ -80,21 +85,20 @@ const Contact = () => {
       )
       .then(
         () => {
-          // success
+          // Success: Display a success message using toast.
           toast.success(
             "Thank You. I will get back to you as soon as possible."
           );
         },
         (error) => {
-          // error handle
+          // Error handling: Display an error message and log the error.
           console.log(error);
           toast.error("Sorry. Something went wrong.");
         }
       )
       .finally(() => {
-        // stop loader
+        // Clear the loading indicator, and reset the form fields.
         setLoading(false);
-        // empty form
         setForm({
           name: "",
           email: "",
@@ -103,6 +107,7 @@ const Contact = () => {
       });
   };
 
+  // Return the Contact section with animations and the contact form.
   return (
     <motion.section
       id="contact"
@@ -133,6 +138,7 @@ const Contact = () => {
         ref={formRef}
         onSubmit={handleSubmit}
       >
+        {/* Input fields for name, email, and message. */}
         <input
           type="text"
           name="name"
@@ -174,6 +180,7 @@ const Contact = () => {
           maxLength={500}
         />
 
+        {/* Submit button with conditional rendering for loading state. */}
         <button
           type="submit"
           className="group flex self-center sm:self-start items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 disabled:scale-100 disabled:bg-opacity-65 dark:bg-white dark:bg-opacity-10"
@@ -193,4 +200,5 @@ const Contact = () => {
   );
 };
 
+// Export the Contact component.
 export default Contact;

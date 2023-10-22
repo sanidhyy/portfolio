@@ -1,4 +1,5 @@
-"use client";
+// Import necessary dependencies and components.
+"use client"; // This comment indicates that this code should run on the client side in Next.js.
 
 import { useRef } from "react";
 import Image from "next/image";
@@ -11,8 +12,10 @@ import { useSectionInView } from "@/lib/hooks";
 
 import Link from "next/link";
 
+// Define the ProjectProps type based on the PROJECTS_DATA structure.
 type ProjectProps = (typeof PROJECTS_DATA)[number];
 
+// Define the Project component for displaying individual projects.
 const Project = ({
   title,
   description,
@@ -20,11 +23,16 @@ const Project = ({
   imageUrl,
   projectUrl,
 }: ProjectProps) => {
+  // Create a reference for the project element.
   const projectRef = useRef<HTMLElement>(null);
+
+  // Use the useScroll hook to track scroll progress for animations.
   const { scrollYProgress } = useScroll({
     target: projectRef,
     offset: ["0 1", "1.33 1"],
   });
+
+  // Define animations based on scroll progress.
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
@@ -66,14 +74,14 @@ const Project = ({
             alt={title}
             quality={95}
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem]
-         rounded-t-lg shadow-2xl group-even:right-[initial] 
-        group-even:-left-40 group-hover:-translate-x-3
-         group-hover:translate-y-3 group-hover:-rotate-2
-
-         group-even:group-hover:translate-x-3
-         group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
-
-          group-hover:scale-[1.04] transition"
+            rounded-t-lg shadow-2xl group-even:right-[initial] 
+            group-even:-left-40 group-hover:-translate-x-3
+            group-hover:translate-y-3 group-hover:-rotate-2
+            
+            group-even:group-hover:translate-x-3
+            group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
+            
+            group-hover:scale-[1.04] transition"
           />
         </Link>
       </div>
@@ -81,7 +89,9 @@ const Project = ({
   );
 };
 
+// Define the Projects component to display a list of projects.
 const Projects = () => {
+  // Use the 'useSectionInView' hook to track section visibility.
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (

@@ -1,4 +1,5 @@
-"use client";
+// Import necessary dependencies and components.
+"use client"; // This comment indicates that this code should run on the client side in Next.js.
 
 import Image from "next/image";
 import Link from "next/link";
@@ -12,8 +13,11 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
 
+// Define the Intro component.
 const Intro = () => {
+  // Use the 'useSectionInView' hook to track section visibility.
   const { ref } = useSectionInView("Home", 0.5);
+  // Use the 'useActiveSectionContext' to manage active sections and clicks.
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -80,6 +84,7 @@ const Intro = () => {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
+            // Set the active section and the time of the last click.
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}

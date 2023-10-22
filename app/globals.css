@@ -2,14 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* react-timeline-vertical-component line color */
 html {
   --line-color: #e5e7eb;
 }
 
+/* react-timeline-vertical-component line color (dark mode) */
 html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
 }
 
+/* border black */
 .borderBlack {
   @apply border border-black/10;
 }

@@ -1,3 +1,3 @@
-import { links } from "@/constants";
+import { LINKS } from "@/constants";
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName = (typeof LINKS)[number]["name"];

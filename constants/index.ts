@@ -2,10 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+
 import carhubImg from "@/public/carhub.png";
 import realtorImg from "@/public/realtor.png";
 import ecommerceImg from "@/public/ecommerce.png";
 
+// Navigation links
 export const LINKS = [
   {
     name: "Home",
@@ -33,6 +35,7 @@ export const LINKS = [
   },
 ] as const;
 
+// External links
 export const EXTRA_LINKS = {
   linkedin: "https://www.linkedin.com/in/sanidhya-verma-ab8a38186/",
   github: "https://github.com/sanidhyy",
@@ -41,6 +44,7 @@ export const EXTRA_LINKS = {
   email: "sanidhya.verma12345@gmail.com",
 } as const;
 
+// Data for work experience
 export const EXPERIENCES_DATA = [
   {
     title: "Passed High School",
@@ -68,6 +72,7 @@ export const EXPERIENCES_DATA = [
   },
 ] as const;
 
+// Data for projects
 export const PROJECTS_DATA = [
   {
     title: "CarHub",
@@ -80,7 +85,7 @@ export const PROJECTS_DATA = [
   {
     title: "Realtor",
     description:
-      "Buy and rent homes for everyone. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Buy and rent homes for everyone. I was the front-end developer. It has features like filtering, sorting, and pagination.",
     tags: ["React", "Chakra UI", "Next.js", "Framer Motion", "React Icons"],
     imageUrl: realtorImg,
     projectUrl: "https://real-estate-app-react.vercel.app/",
@@ -95,6 +100,7 @@ export const PROJECTS_DATA = [
   },
 ] as const;
 
+// Data for skills
 export const SKILLS_DATA = [
   "HTML",
   "CSS",
@@ -117,4 +123,5 @@ export const SKILLS_DATA = [
   "Framer Motion",
 ] as const;
 
+// Owner name
 export const OWNER_NAME = "Sanidhya Kumar Verma";

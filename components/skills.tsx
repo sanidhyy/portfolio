@@ -6,6 +6,7 @@ import { SKILLS_DATA } from "@/constants";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 
+// Define animation variants for the fade-in effect
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
@@ -15,12 +16,13 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.05 * index,
+      delay: 0.05 * index, // Stagger the delay for each skill item
     },
   }),
 };
 
 const Skills = () => {
+  // Use the custom hook to determine when this section is in view
   const { ref } = useSectionInView("Skills");
 
   return (
@@ -42,7 +44,7 @@ const Skills = () => {
             viewport={{
               once: true,
             }}
-            custom={i}
+            custom={i} // Assign a custom index for animation delay
           >
             {skill}
           </motion.li>
