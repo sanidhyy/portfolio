@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
@@ -88,6 +89,9 @@ export default function RootLayout({
             </aside>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
+
+        {/* vercel analytics */}
+        <Analytics />
       </body>
     </html>
   );
