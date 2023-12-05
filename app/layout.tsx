@@ -46,6 +46,10 @@ export const metadata: Metadata = {
   ],
   themeColor: "#CCD6E0",
   manifest: "/manifest.json",
+  other: {
+    "google-site-verification":
+      process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY!,
+  },
 };
 
 // root layout
