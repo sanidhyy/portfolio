@@ -105,6 +105,7 @@ const Intro = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
+          aria-label="Linkedin"
         >
           <BsLinkedin />
         </Link>
@@ -113,6 +114,7 @@ const Intro = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
+          aria-label="Github"
         >
           <FaGithubSquare />
         </Link>
