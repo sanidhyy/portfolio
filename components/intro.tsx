@@ -83,7 +83,7 @@ const Intro = () => {
         <div className="flex gap-2 flex-col sm:flex-row text-lg font-medium">
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-95 transition"
             onClick={() => {
               // Set the active section and the time of the last click.
               setActiveSection("Contact");
@@ -91,15 +91,15 @@ const Intro = () => {
             }}
           >
             Contact me here{" "}
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+            <BsArrowRight className="opacity-70 group-hover:translate-x-0.5 transition" />
           </Link>
           <Link
             href={EXTRA_LINKS.resume}
             target="_blank"
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10"
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition borderBlack dark:bg-white/10"
           >
             Download Resume{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            <HiDownload className="opacity-60 group-hover:translate-y-0.5 transition" />
           </Link>
         </div>
         <div className="flex gap-2 text-lg font-medium">
@@ -107,7 +107,7 @@ const Intro = () => {
             href={EXTRA_LINKS.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.1] hover:scale-[1.1] active:scale-95 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
             aria-label="Linkedin"
           >
             <BsLinkedin />
@@ -116,7 +116,7 @@ const Intro = () => {
             href={EXTRA_LINKS.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.1] hover:scale-[1.1] active:scale-95 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
             aria-label="Github"
           >
             <FaGithubSquare />
