@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
@@ -96,6 +97,9 @@ export default function RootLayout({
 
         {/* vercel analytics */}
         <Analytics />
+
+        {/* vercel speed insights */}
+        <SpeedInsights />
       </body>
     </html>
   );
