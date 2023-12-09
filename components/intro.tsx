@@ -78,46 +78,50 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col gap-y-4 sm:flex-row sm:gap-x-2 justify-center items-center"
       >
-        <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            // Set the active section and the time of the last click.
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
-        <Link
-          href={EXTRA_LINKS.resume}
-          target="_blank"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10"
-        >
-          Download Resume{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </Link>
-        <Link
-          href={EXTRA_LINKS.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
-          aria-label="Linkedin"
-        >
-          <BsLinkedin />
-        </Link>
-        <Link
-          href={EXTRA_LINKS.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
-          aria-label="Github"
-        >
-          <FaGithubSquare />
-        </Link>
+        <div className="flex gap-2 flex-col sm:flex-row text-lg font-medium">
+          <Link
+            href="#contact"
+            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            onClick={() => {
+              // Set the active section and the time of the last click.
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
+          >
+            Contact me here{" "}
+            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          </Link>
+          <Link
+            href={EXTRA_LINKS.resume}
+            target="_blank"
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10"
+          >
+            Download Resume{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          </Link>
+        </div>
+        <div className="flex gap-2 text-lg font-medium">
+          <Link
+            href={EXTRA_LINKS.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
+            aria-label="Linkedin"
+          >
+            <BsLinkedin />
+          </Link>
+          <Link
+            href={EXTRA_LINKS.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
+            aria-label="Github"
+          >
+            <FaGithubSquare />
+          </Link>
+        </div>
       </motion.div>
     </section>
   );
