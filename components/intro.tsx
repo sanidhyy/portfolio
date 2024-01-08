@@ -93,14 +93,14 @@ const Intro = () => {
             Contact me here{" "}
             <BsArrowRight className="opacity-70 group-hover:translate-x-0.5 transition" />
           </Link>
-          <Link
+          <a
             href={EXTRA_LINKS.resume}
             target="_blank"
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition borderBlack dark:bg-white/10"
           >
             Download Resume{" "}
             <HiDownload className="opacity-60 group-hover:translate-y-0.5 transition" />
-          </Link>
+          </a>
         </div>
         <div className="flex gap-2 text-lg font-medium">
           <Link
