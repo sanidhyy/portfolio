@@ -8,8 +8,8 @@ const Footer = () => {
     <footer className="mb-10 px-4 text-center text-gray-500">
       <small className="mb-2 block text-xs">
         {/* Display the copyright notice with dynamic years and owner name. */}
-        &copy; {new Date().getFullYear()}-{(new Date().getFullYear() % 100) + 1}{" "}
-        <b>{OWNER_NAME.split(" ")[0]}</b> | All rights reserved |{" "}
+        &copy; {new Date().getFullYear()} <b>{OWNER_NAME.split(" ")[0]}</b> |
+        All rights reserved |{" "}
         <Link
           href={EXTRA_LINKS.source_code}
           className="font-semibold"
