@@ -67,7 +67,7 @@ const Project = ({
           href={projectUrl}
           target="_blank"
           rel="noreferrer noopener"
-          title="Go to Project"
+          title={`Go to Project: ${title}`}
         >
           <Image
             src={imageUrl}
