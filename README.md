@@ -9,9 +9,9 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/sanidhyy/portfolio/commits/main "Maintenance")
 [![GitHub branches](https://badgen.net/github/branches/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/branches "GitHub branches")
 [![Github commits](https://badgen.net/github/commits/sanidhyy/portfolio/main)](https://github.com/sanidhyy/portfolio/commits "Github commits")
-[![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sanidhy.vercel.app/ "Vercel status")
 [![GitHub issues](https://img.shields.io/github/issues/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/issues "GitHub issues")
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/pulls "GitHub pull requests")
+[![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sanidhy.vercel.app/ "Vercel status")
 
 <!-- Table of Contents -->
 <details>
@@ -47,14 +47,40 @@ Here is the folder structure of My Portfolio.
 portfolio/
   |- public/
   |- app/
+    |-- apple-icon.png
+    |-- favicon.ico
+    |-- globals.css
+    |-- layout.tsx
+    |-- page.tsx
   |- components/
+    |-- about.tsx
+    |-- contact.tsx
+    |-- experience.tsx
+    |-- footer.tsx
+    |-- header.tsx
+    |-- index.ts
+    |-- intro.ts
+    |-- projects.ts
+    |-- section-divider.ts
+    |-- section-heading.ts
+    |-- skills.ts
+    |-- theme-switch.ts
   |- constants/
+    |-- index.ts
   |- context/
+    |-- active-section-context.tsx
+    |-- theme-context.tsx
   |- lib/
+    |-- hooks.ts
+    |-- types.ts
   |- public/
     |-- icons/
-  |- .env.local/
-  |- next.config.js/
+  |- .env.example
+  |- .env.local
+  |- .eslintrc.json
+  |- .gitignore
+  |- environment.d.ts
+  |- next.config.js
   |- package-lock.json
   |- package.json
   |- postcss.config.cjs
@@ -69,12 +95,22 @@ portfolio/
 1. Make sure **Git** and **NodeJS** is installed.
 2. Clone this repository to your local computer.
 3. Create `.env.local` file in root folder.
-4. Contents of `.env`:
+4. Contents of `.env.local`:
 
 ```
+# .env.local
+
+# disabled next.js telemetry
+NEXT_TELEMETRY_DISABLED=1
+
+# email.js id and key
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_xxxxxxxxxx
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_xxxxxxxxxxxx
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=XXXXXXXXXXXXXXX
+
+# google verification key (optional) - used for domain verification on https://search.google.com/search-console
+NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 ```
 
 5. Create new account in [EmailJS](https://www.emailjs.com/ "EmailJS").
