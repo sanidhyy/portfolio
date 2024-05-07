@@ -68,6 +68,7 @@ const Project = ({
           target="_blank"
           rel="noreferrer noopener"
           title={`Go to Project: ${title}`}
+          className="group/project"
         >
           <Image
             src={imageUrl}
@@ -77,6 +78,13 @@ const Project = ({
             rounded-t-lg shadow-2xl group-even:right-[initial] 
             group-even:-left-40 group-hover:-translate-x-3
             group-hover:translate-y-3 group-hover:-rotate-2
+
+            group-focus/project:-translate-x-3
+            group-focus/project:translate-y-3 group-focus/project:-rotate-2
+            group-even:group-focus/project:translate-x-3
+            group-even:group-focus/project:translate-y-3 group-even:group-focus/project:rotate-2
+            
+            group-focus/project:scale-[1.04]
             
             group-even:group-hover:translate-x-3
             group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
@@ -97,7 +105,7 @@ const Projects = () => {
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>My projects</SectionHeading>
-      <div className="">
+      <div>
         {PROJECTS_DATA.map((project, i) => (
           <Project key={`project-${i}`} {...project} />
         ))}
