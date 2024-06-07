@@ -37,7 +37,7 @@ const Skills = () => {
           <motion.li
             id="skills"
             key={`skill-${i}`}
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-white borderBlack max-sm:text-sm rounded-md md:rounded-xl px-3.5 py-1.5 md:px-5 md:py-3 dark:bg-white/10 dark:text-white/80"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"

@@ -111,16 +111,16 @@ export const SKILLS_DATA = [
   "Node.js",
   "Git",
   "Tailwind",
+  "Shadcn UI",
+  "Three.js",
+  "Framer Motion",
   "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "MySQL",
   "PostgreSQL",
+  "Redux",
+  "Express",
   "Python",
   "Django",
-  "Framer Motion",
 ] as const;
 
 // Owner name
