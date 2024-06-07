@@ -1,6 +1,6 @@
-import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
@@ -13,6 +13,10 @@ import "./globals.css";
 
 // inter font export
 const inter = Inter({ subsets: ["latin"] });
+
+export const viewport: Viewport = {
+  themeColor: "#CCD6E0",
+};
 
 // site metadata
 export const metadata: Metadata = {
@@ -45,7 +49,6 @@ export const metadata: Metadata = {
     "html",
     "css",
   ],
-  themeColor: "#CCD6E0",
   manifest: "/manifest.json",
   other: {
     "google-site-verification":
