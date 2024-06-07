@@ -9,9 +9,9 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
 import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 
 // Define the Intro component.
 const Intro = () => {
@@ -46,6 +46,7 @@ const Intro = () => {
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
+
           <motion.span
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -70,8 +71,8 @@ const Intro = () => {
         <b className="font-bold">Hi, I&apos;m {OWNER_NAME.split(" ")[0]}.</b>{" "}
         I&apos;m a <b className="font-bold">full-stack developer</b> with{" "}
         <b className="font-bold">5+ years</b> of experience. I enjoy building{" "}
-        <b className="italic">sites and apps</b>. My focus is{" "}
-        <b className="underline">React (Next.js)</b>
+        <i className="italic">sites and apps</i>. My focus is{" "}
+        <u className="underline">React (Next.js)</u>.
       </motion.h1>
 
       <motion.div
@@ -90,17 +91,18 @@ const Intro = () => {
               setTimeOfLastClick(Date.now());
             }}
           >
-            Contact me here{" "}
+            Contact me
             <BsArrowRight className="opacity-70 group-hover:translate-x-0.5 transition" />
           </Link>
-          <a
+
+          <Link
             href={EXTRA_LINKS.resume}
             target="_blank"
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition borderBlack dark:bg-white/10"
           >
-            Download Resume{" "}
+            My Resume
             <HiDownload className="opacity-60 group-hover:translate-y-0.5 transition" />
-          </a>
+          </Link>
         </div>
         <div className="flex gap-2 text-lg font-medium">
           <Link
@@ -113,6 +115,7 @@ const Intro = () => {
           >
             <BsLinkedin />
           </Link>
+
           <Link
             href={EXTRA_LINKS.github}
             target="_blank"
