@@ -11,7 +11,7 @@
 [![Github commits](https://badgen.net/github/commits/sanidhyy/portfolio/main)](https://github.com/sanidhyy/portfolio/commits "Github commits")
 [![GitHub issues](https://img.shields.io/github/issues/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/issues "GitHub issues")
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/pulls "GitHub pull requests")
-[![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sanidhy.vercel.app/ "Vercel status")
+[![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.sanidhy.me/ "Vercel status")
 
 <!-- Table of Contents -->
 <details>
@@ -124,7 +124,7 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 11. Now app is fully configured :+1: and you can start using this app using `npm run dev` or `yarn dev`.
 
-**NOTE:** Make sure you don't share these keys publicaly.
+**NOTE:** Ensure you don't share these keys publicly.
 
 ## :camera: Screenshots:
 
