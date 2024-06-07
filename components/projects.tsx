@@ -2,15 +2,14 @@
 "use client"; // This comment indicates that this code should run on the client side in Next.js.
 
 import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { motion, useTransform } from "framer-motion";
-import { useScroll } from "framer-motion";
+import Link from "next/link";
 
-import SectionHeading from "./section-heading";
 import { PROJECTS_DATA } from "@/constants";
 import { useSectionInView } from "@/lib/hooks";
 
-import Link from "next/link";
+import SectionHeading from "./section-heading";
 
 // Define the ProjectProps type based on the PROJECTS_DATA structure.
 type ProjectProps = (typeof PROJECTS_DATA)[number];
@@ -48,6 +47,7 @@ const Project = ({
       <div className="bg-gray-100 max-w-[42rem] sm:group-even:pl-8 border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] rounded-lg hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
+
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
@@ -63,11 +63,12 @@ const Project = ({
             ))}
           </ul>
         </div>
+
         <Link
           href={projectUrl}
           target="_blank"
           rel="noreferrer noopener"
-          title={`Go to Project: ${title}`}
+          title={`Visit Project: ${title}`}
           className="group/project"
         >
           <Image

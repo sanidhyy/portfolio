@@ -4,8 +4,9 @@
 // Import necessary dependencies and components.
 import { motion } from "framer-motion";
 
-import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
+
+import SectionHeading from "./section-heading";
 
 // Define the About component.
 const About = () => {

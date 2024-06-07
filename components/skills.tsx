@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 
 import { SKILLS_DATA } from "@/constants";
-import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
+
+import SectionHeading from "./section-heading";
 
 // Define animation variants for the fade-in effect
 const fadeInAnimationVariants = {

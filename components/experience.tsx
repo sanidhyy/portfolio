@@ -2,18 +2,19 @@
 "use client"; // This comment indicates that this code should run on the client side in Next.js.
 
 import React, { useEffect, useState } from "react";
-
-import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+
 import { EXPERIENCES_DATA } from "@/constants";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useThemeContext } from "@/context/theme-context";
 import { useSectionInView } from "@/lib/hooks";
 
+import SectionHeading from "./section-heading";
+
 import "react-vertical-timeline-component/style.min.css";
-import { useThemeContext } from "@/context/theme-context";
 
 // Define the Experience component.
 const Experience = () => {
@@ -26,9 +27,7 @@ const Experience = () => {
 
   useEffect((): void => {
     // Set isExperienceSectionActive to true when the active section is "Experience".
-    if (activeSection === "Experience") {
-      setIsExperienceSectionActive(true);
-    }
+    if (activeSection === "Experience") setIsExperienceSectionActive(true);
   }, [activeSection]);
 
   return (
@@ -63,7 +62,9 @@ const Experience = () => {
               }}
             >
               <h3 className="font-semibold capitalize">{experience.title}</h3>
+
               <p className="font-normal !mt-0">{experience.location}</p>
+
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {experience.description}
               </p>
