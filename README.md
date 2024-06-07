@@ -4,13 +4,13 @@
 
 ![A Modern UI/UX Portfolio using Next.JS](/.github/images/img_main.png "A Modern UI/UX Portfolio using Next.JS")
 
-[![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/sanidhyy "Ask Me Anything!")
-[![GitHub license](https://img.shields.io/github/license/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/blob/main/LICENSE "GitHub license")
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/sanidhyy/portfolio/commits/main "Maintenance")
-[![GitHub branches](https://badgen.net/github/branches/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/branches "GitHub branches")
-[![Github commits](https://badgen.net/github/commits/sanidhyy/portfolio/main)](https://github.com/sanidhyy/portfolio/commits "Github commits")
-[![GitHub issues](https://img.shields.io/github/issues/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/issues "GitHub issues")
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/sanidhyy/portfolio)](https://github.com/sanidhyy/portfolio/pulls "GitHub pull requests")
+[![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy "Ask Me Anything!")
+[![GitHub license](https://flat.badgen.net/github/license/sanidhyy/portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/blob/main/LICENSE "GitHub license")
+[![Maintenance](https://flat.badgen.net/static/Maintained/yes?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/commits/main "Maintenance")
+[![GitHub branches](https://flat.badgen.net/github/branches/sanidhyy/portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/branches "GitHub branches")
+[![Github commits](https://flat.badgen.net/github/commits/sanidhyy/portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/commits "Github commits")
+[![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/issues "GitHub issues")
+[![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/pulls "GitHub pull requests")
 [![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.sanidhy.me/ "Vercel status")
 
 <!-- Table of Contents -->
@@ -97,7 +97,7 @@ portfolio/
 3. Create `.env.local` file in root folder.
 4. Contents of `.env.local`:
 
-```
+```env
 # .env.local
 
 # disabled next.js telemetry
@@ -114,10 +114,15 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 5. Create new account in [EmailJS](https://www.emailjs.com/ "EmailJS").
+
 6. From dashboard, choose Email Services > Add New Service and connect your mail to emailjs.
-7. Once new service is configured, copy your **Service ID** to `NEXT_PUBLIC_EMAILJS_SERVICE_ID`
-8. Now, go to Email Templates > Create New Template to create your mail template. Once it is done, you can copy **Template ID** to `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`
-9. To get your **Public Key**, click on your username on navbar and go to account settings > Copy Public Key to `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
+
+7. Once new service is configured, copy your **Service ID** to `NEXT_PUBLIC_EMAILJS_SERVICE_ID`.
+
+8. Now, go to Email Templates > Create New Template to create your mail template. Once it is done, you can copy **Template ID** to `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`.
+
+9. To get your **Public Key**, click on your username on navbar and go to account settings > Copy Public Key to `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`.
+
 10. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
 
 ![Copy Public Key](/.github/images/step_emailjs.png "Copy Public Key")
@@ -142,7 +147,7 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## :wrench: Stats
 
-[![Stats for this App](/.github/images/stats.svg "Stats for this App")](https://pagespeed-insights-svg.glitch.me/?url=https://www.sanidhy.me/ "Stats for this App")
+[![Stats for My portfolio](/.github/images/stats.svg "Stats for My portfolio")](https://pagespeed.web.dev/analysis?url=https://www.sanidhy.me/ "Stats for My portfolio")
 
 ## :raised_hands: Contribute
 
@@ -167,9 +172,9 @@ Useful resources and libraries that are used in My Portfolio
 
 ## :rocket: Follow Me
 
-[![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2Fmedical-chat-app "Tweet")
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCNAz_hUVBG2ZUN8TVm0bmYw "Subscribe my Channel")
+[![Follow Me](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
+[![Tweet about this project](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Check+out+this+amazing+app:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%portfolio "Tweet about this project")
+[![Subscribe to my YouTube Channel](https://img.shields.io/youtube/channel/subscribers/UCNAz_hUVBG2ZUN8TVm0bmYw)](https://www.youtube.com/@OPGAMER./?sub_confirmation=1 "Subscribe to my YouTube Channel")
 
 ## :books: Learn More
 
