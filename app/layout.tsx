@@ -5,9 +5,9 @@ import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 import { Header, Footer, ThemeSwitch } from "@/components";
+import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
-import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
 
 import "./globals.css";
 
