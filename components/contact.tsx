@@ -1,16 +1,17 @@
 // Import necessary dependencies and components.
 "use client"; // This comment indicates that this code should run on the client side in Next.js.
 
-import { FormEvent, useRef, useState } from "react";
-import Link from "next/link";
-import { FaPaperPlane } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { FormEvent, useRef, useState } from "react";
 import toast from "react-hot-toast";
+import { FaPaperPlane } from "react-icons/fa";
+
+import { EXTRA_LINKS } from "@/constants";
+import { useSectionInView } from "@/lib/hooks";
 
 import SectionHeading from "./section-heading";
-import { useSectionInView } from "@/lib/hooks";
-import emailjs from "@emailjs/browser";
-import { EXTRA_LINKS } from "@/constants";
 
 // Define the Contact component.
 const Contact = () => {
@@ -92,7 +93,7 @@ const Contact = () => {
         },
         (error) => {
           // Error handling: Display an error message and log the error.
-          console.log(error);
+          console.error(error);
           toast.error("Sorry. Something went wrong.");
         }
       )
