@@ -16,3 +16,8 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+/* Hide reCAPTCHA v2 badge */
+.grecaptcha-badge {
+  @apply invisible;
+}

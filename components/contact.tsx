@@ -1,10 +1,11 @@
 // Import necessary dependencies and components.
 "use client"; // This comment indicates that this code should run on the client side in Next.js.
 
-import emailjs from "@emailjs/browser";
+import emailjs, { type EmailJSResponseStatus } from "@emailjs/browser";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FormEvent, useRef, useState } from "react";
+import { createRef, FormEvent, useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import toast from "react-hot-toast";
 import { FaPaperPlane } from "react-icons/fa";
 
@@ -25,11 +26,53 @@ const Contact = () => {
     message: "",
   });
 
+  const recaptchaRef = createRef<ReCAPTCHA>();
+
   // Handle form field changes.
   const handleChange = (e: FormEvent) => {
     // Extract the field name and value from the event.
     const { name, value } = e.target as HTMLInputElement;
     setForm({ ...form, [name]: value });
+  };
+
+  const handleCaptchaChange = (value: string | null) => {
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
+        {
+          to_name: form.name,
+          to_email: form.email,
+          message: form.message,
+
+          // verifying google recaptcha
+          "g-recaptcha-response": value,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          // Success: Display a success message using toast.
+          toast.success(
+            "Thank You. I will get back to you as soon as possible."
+          );
+        },
+        (error: EmailJSResponseStatus) => {
+          // Error handling: Display an error message and log the error.
+          console.error(error);
+          toast.error(error.text ?? "Something went wrong!");
+        }
+      )
+      .finally(() => {
+        // Clear the loading indicator, and reset the form fields.
+        setLoading(false);
+        recaptchaRef?.current?.reset();
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      });
   };
 
   // Validate the form on submission.
@@ -73,39 +116,10 @@ const Contact = () => {
     // Show a loading indicator.
     setLoading(true);
 
-    emailjs
-      .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
-        {
-          to_name: form.name,
-          to_email: form.email,
-          message: form.message,
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          // Success: Display a success message using toast.
-          toast.success(
-            "Thank You. I will get back to you as soon as possible."
-          );
-        },
-        (error) => {
-          // Error handling: Display an error message and log the error.
-          console.error(error);
-          toast.error("Sorry. Something went wrong.");
-        }
-      )
-      .finally(() => {
-        // Clear the loading indicator, and reset the form fields.
-        setLoading(false);
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
-      });
+    if (!recaptchaRef) return;
+
+    // execute google recaptcha
+    recaptchaRef.current?.execute();
   };
 
   // Return the Contact section with animations and the contact form.
@@ -180,6 +194,14 @@ const Contact = () => {
           rows={10}
           required
           maxLength={500}
+        />
+
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          size="invisible"
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+          onChange={handleCaptchaChange}
+          className="mb-4"
         />
 
         {/* Submit button with conditional rendering for loading state. */}
