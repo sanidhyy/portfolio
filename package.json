@@ -71,6 +71,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@types/react-google-recaptcha": "^2.1.9",
     "@types/react-vertical-timeline-component": "^3.3.5"
   },
   "funding": [
