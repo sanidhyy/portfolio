@@ -199,7 +199,7 @@ const Contact = () => {
         <ReCAPTCHA
           ref={recaptchaRef}
           size="invisible"
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
           onChange={handleCaptchaChange}
           className="mb-4"
         />

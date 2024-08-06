@@ -11,6 +11,10 @@ declare global {
 
       // google verification key (optional) - used for domain verification on https://search.google.com/search-console
       NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY: string;
+
+      // google recaptcha keys
+      NEXT_PUBLIC_RECAPTCHA_SITE_KEY: string;
+      RECAPTCHA_SECRET_KEY: string;
     }
   }
 }
