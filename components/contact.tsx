@@ -36,6 +36,8 @@ const Contact = () => {
   };
 
   const handleCaptchaChange = (value: string | null) => {
+    if(!value) return;
+    
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
