@@ -48,27 +48,24 @@ export const EXTRA_LINKS = {
 export const EXPERIENCES_DATA = [
   {
     title: "Passed High School",
-    location: "Sitapur, IN",
     description:
       "Completed my high school curriculum, gaining a solid foundation in various subjects and essential skills.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021",
-  },
-  {
-    title: "React.js Bootcamp",
-    location: "Lucknow, IN",
-    description:
-      "Successfully completed an intensive 1-month React.js Developer Bootcamp. Acquired expertise in React components, state management with Redux, and interacting with RESTful APIs.",
-    icon: React.createElement(CgWorkAlt),
     date: "2022",
   },
   {
+    title: "React.js Bootcamp",
+    description:
+      "Successfully completed an intensive 1-month React.js Developer Bootcamp. Acquired expertise in React components, state management with Redux, and interacting with RESTful APIs.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
+  },
+  {
     title: "Freelancer React.js Developer",
-    location: "Bangalore, IN",
     description:
       "Working as a freelance React.js Developer, I have collaborated with various clients to create responsive and dynamic web applications.",
     icon: React.createElement(FaReact),
-    date: "2022 - present",
+    date: "2023 - present",
   },
 ] as const;
 
