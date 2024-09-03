@@ -36,8 +36,8 @@ const Contact = () => {
   };
 
   const handleCaptchaChange = (value: string | null) => {
-    if(!value) return;
-    
+    if (!value) return;
+
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
@@ -50,7 +50,7 @@ const Contact = () => {
           // verifying google recaptcha
           "g-recaptcha-response": value,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ""
       )
       .then(
         () => {
@@ -123,6 +123,8 @@ const Contact = () => {
     // execute google recaptcha
     recaptchaRef.current?.execute();
   };
+
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
   // Return the Contact section with animations and the contact form.
   return (
@@ -198,13 +200,15 @@ const Contact = () => {
           maxLength={500}
         />
 
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          size="invisible"
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-          onChange={handleCaptchaChange}
-          className="mb-4"
-        />
+        {siteKey && (
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            size="invisible"
+            sitekey={siteKey}
+            onChange={handleCaptchaChange}
+            className="mb-4"
+          />
+        )}
 
         {/* Submit button with conditional rendering for loading state. */}
         <button
