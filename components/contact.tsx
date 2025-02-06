@@ -165,8 +165,9 @@ const Contact = () => {
           id="name"
           value={form.name}
           onChange={handleChange}
+          disabled={loading}
           placeholder="Your name"
-          className="h-14 rounded-lg px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 rounded-lg px-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           required
           maxLength={200}
           autoComplete="off"
@@ -179,8 +180,9 @@ const Contact = () => {
           id="email"
           value={form.email}
           onChange={handleChange}
+          disabled={loading}
           placeholder="Your email"
-          className="h-14 rounded-lg my-4 px-4 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 rounded-lg my-4 px-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           required
           maxLength={100}
           autoComplete="off"
@@ -188,11 +190,12 @@ const Contact = () => {
         />
 
         <textarea
-          className="h-52 rounded-lg mb-4 borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 rounded-lg mb-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           id="message"
           value={form.message}
           onChange={handleChange}
+          disabled={loading}
           placeholder="Your message"
           cols={30}
           rows={10}
@@ -203,6 +206,7 @@ const Contact = () => {
         {siteKey && (
           <ReCAPTCHA
             ref={recaptchaRef}
+            aria-disabled={loading}
             size="invisible"
             sitekey={siteKey}
             onChange={handleCaptchaChange}
