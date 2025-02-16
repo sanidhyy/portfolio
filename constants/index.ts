@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { SiNextdotjs } from "react-icons/si";
 
 import carhubImg from "@/public/carhub.png";
 import realtorImg from "@/public/realtor.png";
@@ -63,9 +64,16 @@ export const EXPERIENCES_DATA = [
   {
     title: "Freelancer React.js Developer",
     description:
-      "Working as a freelance React.js Developer, I have collaborated with various clients to create responsive and dynamic web applications.",
+      "Worked as a freelance React.js Developer, I have collaborated with various clients to create responsive and dynamic web applications.",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2023 - 2024",
+  },
+  {
+    title: "Jaro Dev Studio",
+    description:
+      "Currently working as a Full-stack Next.js Developer, building responsive and dynamic web applications using Next.js, Tailwind CSS and OpenAI.",
+    icon: React.createElement(SiNextdotjs),
+    date: "2024 - present",
   },
 ] as const;
 
