@@ -6,7 +6,7 @@
       "dependencies": {
         "@emailjs/browser": "^3.11.0",
         "@types/node": "20.8.6",
-        "@types/react": "19.0.8",
+        "@types/react": "19.2.2",
         "@types/react-dom": "19.0.3",
         "@vercel/analytics": "^1.5.0",
         "@vercel/speed-insights": "^1.0.1",
@@ -18,7 +18,7 @@
         "next": "15.4.7",
         "next-pwa": "^5.6.0",
         "postcss": "8.4.31",
-        "react": "19.0.0",
+        "react": "19.2.0",
         "react-dom": "19.0.0",
         "react-google-recaptcha": "^3.1.0",
         "react-hot-toast": "^2.4.1",
@@ -1063,7 +1063,7 @@
 
     "randombytes": ["randombytes@2.1.0", "", { "dependencies": { "safe-buffer": "^5.1.0" } }, "sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ=="],
 
-    "react": ["react@19.0.0", "", {}, "sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ=="],
+    "react": ["react@19.2.0", "", {}, "sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ=="],
 
     "react-async-script": ["react-async-script@1.2.0", "", { "dependencies": { "hoist-non-react-statics": "^3.3.0", "prop-types": "^15.5.0" }, "peerDependencies": { "react": ">=16.4.1" } }, "sha512-bCpkbm9JiAuMGhkqoAiC0lLkb40DJ0HOEJIku+9JDjxX3Rcs+ztEOG13wbrOskt3n2DTrjshhaQ/iay+SnGg5Q=="],
 
