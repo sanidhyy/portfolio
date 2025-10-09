@@ -30,7 +30,7 @@
       },
       "devDependencies": {
         "@types/react-google-recaptcha": "^2.1.9",
-        "@types/react-vertical-timeline-component": "^3.3.5",
+        "@types/react-vertical-timeline-component": "^3.3.6",
       },
     },
   },
@@ -399,7 +399,7 @@
 
     "@types/react-google-recaptcha": ["@types/react-google-recaptcha@2.1.9", "", { "dependencies": { "@types/react": "*" } }, "sha512-nT31LrBDuoSZJN4QuwtQSF3O89FVHC4jLhM+NtKEmVF5R1e8OY0Jo4//x2Yapn2aNHguwgX5doAq8Zo+Ehd0ug=="],
 
-    "@types/react-vertical-timeline-component": ["@types/react-vertical-timeline-component@3.3.5", "", { "dependencies": { "@types/react": "*" } }, "sha512-oduBHTmC+eRfJL+aZXfxurljtNpRlqfU+Vt6OzYfyprAIkcFY+GGAho/ZqUNk1KY3H2wy8hzyHjjaTZusYwZlw=="],
+    "@types/react-vertical-timeline-component": ["@types/react-vertical-timeline-component@3.3.6", "", { "dependencies": { "@types/react": "*" } }, "sha512-OUvyPXRjXvUD/SNLO0CW0GbIxVF32Ios5qHecMSfw6kxnK1cPULD9NV80EuqZ3WmS/s6BgbcwmN8k4ISb3akhQ=="],
 
     "@types/resolve": ["@types/resolve@1.17.1", "", { "dependencies": { "@types/node": "*" } }, "sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw=="],
 
