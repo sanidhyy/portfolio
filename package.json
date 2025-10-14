@@ -46,7 +46,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
+    "@emailjs/browser": "^4.4.1",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.0.1",
     "autoprefixer": "10.4.21",
