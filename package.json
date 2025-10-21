@@ -48,7 +48,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@vercel/analytics": "^1.5.0",
-    "@vercel/speed-insights": "^1.0.1",
+    "@vercel/speed-insights": "^1.2.0",
     "autoprefixer": "10.4.21",
     "clsx": "^2.1.1",
     "eslint": "9.37.0",
