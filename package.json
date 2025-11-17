@@ -49,7 +49,7 @@
     "@emailjs/browser": "^4.4.1",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "autoprefixer": "10.4.21",
+    "autoprefixer": "10.4.22",
     "clsx": "^2.1.1",
     "eslint": "9.39.1",
     "eslint-config-next": "16.0.1",
