@@ -52,7 +52,7 @@
     "autoprefixer": "10.4.23",
     "clsx": "^2.1.1",
     "eslint": "9.39.2",
-    "eslint-config-next": "16.1.3",
+    "eslint-config-next": "16.1.5",
     "framer-motion": "^12.29.2",
     "next": "15.5.9",
     "next-pwa": "^5.6.0",
