@@ -41,15 +41,19 @@ const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
 
-    if (localTheme) {
-      setTheme(localTheme);
-
-      if (localTheme === "dark") {
+    const applyTheme = (newTheme: Theme) => {
+      setTheme(newTheme);
+      if (newTheme === "dark") {
         document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
       }
+    };
+
+    if (localTheme) {
+      queueMicrotask(() => applyTheme(localTheme));
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-      document.documentElement.classList.add("dark");
+      queueMicrotask(() => applyTheme("dark"));
     }
   }, []);
 

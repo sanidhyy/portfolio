@@ -164,7 +164,6 @@ Useful resources and libraries that are used in My Portfolio
 - [React Vertical Timeline Component](https://www.npmjs.com/package/react-vertical-timeline-component "React Vertical Timeline Component")
 - [React Hot Toast](https://www.npmjs.com/package/react-hot-toast "React Hot Toast")
 - [React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer "React Intersection Observer")
-- [Next PWA](https://www.npmjs.com/package/next-pwa "Next PWA")
 
 ## :coffee: Buy Me a Coffee
 
