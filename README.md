@@ -43,6 +43,8 @@
 
 Here is the folder structure of My Portfolio.
 
+<!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 portfolio/
   |- public/
@@ -87,6 +89,8 @@ portfolio/
   |- tailwind.config.cjs
   |- tsconfig.json
 ```
+
+<!--- FOLDER_STRUCTURE_END --->
 
 <br />
 
@@ -157,6 +161,8 @@ You might encounter some bugs while using this app. You are more than welcome to
 
 Useful resources and libraries that are used in My Portfolio
 
+<!--- DEPENDENCIES_START --->
+
 - [Email JS](https://www.emailjs.com/ "Email JS")
 - [Framer Motion](https://www.framer.com/motion/ "Framer Motion")
 - [CLSX](https://www.npmjs.com/package/clsx "CLSX")
@@ -164,6 +170,7 @@ Useful resources and libraries that are used in My Portfolio
 - [React Vertical Timeline Component](https://www.npmjs.com/package/react-vertical-timeline-component "React Vertical Timeline Component")
 - [React Hot Toast](https://www.npmjs.com/package/react-hot-toast "React Hot Toast")
 - [React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer "React Intersection Observer")
+<!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
 
