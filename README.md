@@ -44,16 +44,17 @@
 Here is the folder structure of My Portfolio.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 portfolio/
-  |- public/
   |- app/
     |-- apple-icon.png
     |-- favicon.ico
     |-- globals.css
     |-- layout.tsx
+    |-- manifest.json
     |-- page.tsx
+  |- cache/
+    |-- config.json
   |- components/
     |-- about.tsx
     |-- contact.tsx
@@ -61,12 +62,12 @@ portfolio/
     |-- footer.tsx
     |-- header.tsx
     |-- index.ts
-    |-- intro.ts
-    |-- projects.ts
-    |-- section-divider.ts
-    |-- section-heading.ts
-    |-- skills.ts
-    |-- theme-switch.ts
+    |-- intro.tsx
+    |-- projects.tsx
+    |-- section-divider.tsx
+    |-- section-heading.tsx
+    |-- skills.tsx
+    |-- theme-switch.tsx
   |- constants/
     |-- index.ts
   |- context/
@@ -76,20 +77,20 @@ portfolio/
     |-- hooks.ts
     |-- types.ts
   |- public/
-    |-- icons/
   |- .env.example
-  |- .env.local
+  |- .env/.env.local
   |- .eslintrc.json
   |- .gitignore
+  |- bun.lock
   |- environment.d.ts
-  |- next.config.js
-  |- package-lock.json
+  |- eslint.config.mjs
+  |- next.config.ts
   |- package.json
-  |- postcss.config.cjs
-  |- tailwind.config.cjs
+  |- postcss.config.js
+  |- tailwind.config.js
   |- tsconfig.json
+  |- vercel.ts
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -162,14 +163,35 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
+- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
+- [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.3
+- [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
+- [@types/node](https://www.npmjs.com/package/@types/node): 25.2.3
+- [@types/react](https://www.npmjs.com/package/@types/react): 19.2.14
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): 19.2.3
+- [@types/react-google-recaptcha](https://www.npmjs.com/package/@types/react-google-recaptcha): ^2.1.9
+- [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
+- [@vercel/analytics](https://www.npmjs.com/package/@vercel/analytics): ^1.6.1
+- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.33
+- [@vercel/speed-insights](https://www.npmjs.com/package/@vercel/speed-insights): ^1.3.1
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer): 10.4.24
+- [baseline-browser-mapping](https://www.npmjs.com/package/baseline-browser-mapping): ^2.9.19
+- [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
+- [eslint](https://www.npmjs.com/package/eslint): 10.0.0
+- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.1.6
+- [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.34.0
+- [next](https://www.npmjs.com/package/next): 16.1.6
+- [postcss](https://www.npmjs.com/package/postcss): 8.5.6
+- [react](https://www.npmjs.com/package/react): 19.2.4
+- [react-dom](https://www.npmjs.com/package/react-dom): 19.2.4
+- [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha): ^3.1.0
+- [react-hot-toast](https://www.npmjs.com/package/react-hot-toast): ^2.6.0
+- [react-icons](https://www.npmjs.com/package/react-icons): ^5.5.0
+- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer): ^10.0.2
+- [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): 3.3.3
+- [typescript](https://www.npmjs.com/package/typescript): 5.9.3
 
-- [Email JS](https://www.emailjs.com/ "Email JS")
-- [Framer Motion](https://www.framer.com/motion/ "Framer Motion")
-- [CLSX](https://www.npmjs.com/package/clsx "CLSX")
-- [React Icons](https://react-icons.github.io/react-icons/ "React Icons")
-- [React Vertical Timeline Component](https://www.npmjs.com/package/react-vertical-timeline-component "React Vertical Timeline Component")
-- [React Hot Toast](https://www.npmjs.com/package/react-hot-toast "React Hot Toast")
-- [React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer "React Intersection Observer")
 <!--- DEPENDENCIES_END --->
 
 ## :coffee: Buy Me a Coffee
