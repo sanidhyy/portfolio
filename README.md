@@ -166,7 +166,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.3
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
-- [@types/node](https://www.npmjs.com/package/@types/node): 25.2.3
+- [@types/node](https://www.npmjs.com/package/@types/node): 25.3.0
 - [@types/react](https://www.npmjs.com/package/@types/react): 19.2.14
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): 19.2.3
 - [@types/react-google-recaptcha](https://www.npmjs.com/package/@types/react-google-recaptcha): ^2.1.9
