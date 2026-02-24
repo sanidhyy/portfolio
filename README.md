@@ -164,7 +164,7 @@ Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
-- [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.3
+- [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.4
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
 - [@types/node](https://www.npmjs.com/package/@types/node): 25.3.0
 - [@types/react](https://www.npmjs.com/package/@types/react): 19.2.14
