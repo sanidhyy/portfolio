@@ -75,7 +75,7 @@
     "@types/react-dom": "19.2.3",
     "@types/react-google-recaptcha": "^2.1.9",
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "baseline-browser-mapping": "^2.9.19"
+    "baseline-browser-mapping": "^2.10.0"
   },
   "funding": [
     {
