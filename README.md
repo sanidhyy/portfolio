@@ -166,13 +166,13 @@ Useful resources and libraries that are used in My Portfolio
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.4
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
-- [@types/node](https://www.npmjs.com/package/@types/node): 25.3.0
+- [@types/node](https://www.npmjs.com/package/@types/node): 25.3.3
 - [@types/react](https://www.npmjs.com/package/@types/react): 19.2.14
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): 19.2.3
 - [@types/react-google-recaptcha](https://www.npmjs.com/package/@types/react-google-recaptcha): ^2.1.9
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@vercel/analytics](https://www.npmjs.com/package/@vercel/analytics): ^1.6.1
-- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.33
+- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.36
 - [@vercel/speed-insights](https://www.npmjs.com/package/@vercel/speed-insights): ^1.3.1
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): 10.4.24
 - [baseline-browser-mapping](https://www.npmjs.com/package/baseline-browser-mapping): ^2.10.0
