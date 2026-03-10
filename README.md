@@ -177,7 +177,7 @@ Useful resources and libraries that are used in My Portfolio
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): 10.4.27
 - [baseline-browser-mapping](https://www.npmjs.com/package/baseline-browser-mapping): ^2.10.0
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
-- [eslint](https://www.npmjs.com/package/eslint): 10.0.2
+- [eslint](https://www.npmjs.com/package/eslint): 10.0.3
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.1.6
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.35.2
 - [next](https://www.npmjs.com/package/next): 16.1.6
