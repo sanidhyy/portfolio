@@ -186,7 +186,7 @@ Useful resources and libraries that are used in My Portfolio
 - [react-dom](https://www.npmjs.com/package/react-dom): 19.2.4
 - [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha): ^3.1.0
 - [react-hot-toast](https://www.npmjs.com/package/react-hot-toast): ^2.6.0
-- [react-icons](https://www.npmjs.com/package/react-icons): ^5.5.0
+- [react-icons](https://www.npmjs.com/package/react-icons): ^5.6.0
 - [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer): ^10.0.3
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): 3.3.3
