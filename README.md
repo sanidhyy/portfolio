@@ -172,7 +172,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@types/react-google-recaptcha](https://www.npmjs.com/package/@types/react-google-recaptcha): ^2.1.9
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@vercel/analytics](https://www.npmjs.com/package/@vercel/analytics): ^2.0.1
-- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.38
+- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.39
 - [@vercel/speed-insights](https://www.npmjs.com/package/@vercel/speed-insights): ^2.0.0
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): 10.4.27
 - [baseline-browser-mapping](https://www.npmjs.com/package/baseline-browser-mapping): ^2.10.0
