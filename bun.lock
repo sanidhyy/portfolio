@@ -7,7 +7,7 @@
       "dependencies": {
         "@emailjs/browser": "^4.4.1",
         "@vercel/analytics": "^2.0.1",
-        "@vercel/config": "^0.0.41",
+        "@vercel/config": "^0.1.0",
         "@vercel/speed-insights": "^2.0.0",
         "autoprefixer": "10.4.27",
         "clsx": "^2.1.1",
@@ -237,9 +237,9 @@
 
     "@vercel/analytics": ["@vercel/analytics@2.0.1", "", { "peerDependencies": { "@remix-run/react": "^2", "@sveltejs/kit": "^1 || ^2", "next": ">= 13", "nuxt": ">= 3", "react": "^18 || ^19 || ^19.0.0-rc", "svelte": ">= 4", "vue": "^3", "vue-router": "^4" }, "optionalPeers": ["@remix-run/react", "@sveltejs/kit", "next", "nuxt", "react", "svelte", "vue", "vue-router"] }, "sha512-MTQG6V9qQrt1tsDeF+2Uoo5aPjqbVPys1xvnIftXSJYG2SrwXRHnqEvVoYID7BTruDz4lCd2Z7rM1BdkUehk2g=="],
 
-    "@vercel/config": ["@vercel/config@0.0.41", "", { "dependencies": { "@vercel/routing-utils": "6.1.0", "pretty-cache-header": "^1.0.0", "zod": "^3.22.0" }, "bin": { "config": "dist/cli.js" } }, "sha512-HBtFKzNAuR/3hxnlgOLtiqOjJ71c6eye9jz4NzYqUCtdN5xRsX+PiScn5gEwLvd5TnzaKDvAwcmOWGmjnW1uFQ=="],
+    "@vercel/config": ["@vercel/config@0.1.0", "", { "dependencies": { "@vercel/routing-utils": "6.1.1", "pretty-cache-header": "^1.0.0", "zod": "^3.22.0" }, "bin": { "config": "dist/cli.js" } }, "sha512-fZSW+xYGgKnptVTRBlk6aUBEkEQNGufPqxMMKZ66EKPGkTvPBmcjxEVBny6ugoAdnIsfmbMd8mxH1C/ANKXfkQ=="],
 
-    "@vercel/routing-utils": ["@vercel/routing-utils@6.1.0", "", { "dependencies": { "path-to-regexp": "6.1.0", "path-to-regexp-updated": "npm:path-to-regexp@6.3.0" }, "optionalDependencies": { "ajv": "^6.12.3" } }, "sha512-dEw7WSVocg92Gtac6ZtJKkEU/v4+3kPu6t50x/aqYj8Sh6yI1wZBmx1KfSYK7LASOWyO294Ckkie07e++pCjTQ=="],
+    "@vercel/routing-utils": ["@vercel/routing-utils@6.1.1", "", { "dependencies": { "path-to-regexp": "6.1.0", "path-to-regexp-updated": "npm:path-to-regexp@6.3.0" }, "optionalDependencies": { "ajv": "^6.12.3" } }, "sha512-kUJn6CRuLvua5xvDZTJu1rC8GLdniC8D5VIzoJKm0dUdcUxv3LEx+pi8dokxWS+YM7cIs1Z3Y8ms/BDW1iBzzA=="],
 
     "@vercel/speed-insights": ["@vercel/speed-insights@2.0.0", "", { "peerDependencies": { "@sveltejs/kit": "^1 || ^2", "next": ">= 13", "nuxt": ">= 3", "react": "^18 || ^19 || ^19.0.0-rc", "svelte": ">= 4", "vue": "^3", "vue-router": "^4" }, "optionalPeers": ["@sveltejs/kit", "next", "nuxt", "react", "svelte", "vue", "vue-router"] }, "sha512-jwkNcrTeafWxjmWq4AHBaptSqZiJkYU5adLC9QBSqeim0GcqDMgN5Ievh8OG1rJ6W3A4l1oiP7qr9CWxGuzu3w=="],
 
