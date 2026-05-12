@@ -182,7 +182,7 @@ Useful resources and libraries that are used in My Portfolio
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.38.0
 - [next](https://www.npmjs.com/package/next): 16.2.3
 - [postcss](https://www.npmjs.com/package/postcss): 8.5.14
-- [react](https://www.npmjs.com/package/react): 19.2.5
+- [react](https://www.npmjs.com/package/react): 19.2.6
 - [react-dom](https://www.npmjs.com/package/react-dom): 19.2.5
 - [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha): ^3.1.0
 - [react-hot-toast](https://www.npmjs.com/package/react-hot-toast): ^2.6.0
