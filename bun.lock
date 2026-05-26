@@ -34,7 +34,7 @@
         "@types/react-dom": "19.2.3",
         "@types/react-google-recaptcha": "^2.1.9",
         "@types/react-vertical-timeline-component": "^3.3.6",
-        "baseline-browser-mapping": "^2.10.31",
+        "baseline-browser-mapping": "^2.10.32",
       },
     },
   },
@@ -313,7 +313,7 @@
 
     "balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
-    "baseline-browser-mapping": ["baseline-browser-mapping@2.10.31", "", { "bin": { "baseline-browser-mapping": "dist/cli.cjs" } }, "sha512-MujYO3eP72uvmSE0i4wltsodRfIpZATP3jvzRNRGGxgzId7aVocVJJV3nf01qnzzKFGxQVC9bpWxl5cjxTr/7Q=="],
+    "baseline-browser-mapping": ["baseline-browser-mapping@2.10.32", "", { "bin": { "baseline-browser-mapping": "dist/cli.cjs" } }, "sha512-wbPvpyjJPC0zdfdKXxqEL3Ea+bOMD/87X4lftiJkkaBiuG6ALQy1SLmEd7BSmVCuwCQsBrCamgBoLyfFDD1EPg=="],
 
     "binary-extensions": ["binary-extensions@2.2.0", "", {}, "sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA=="],
 
