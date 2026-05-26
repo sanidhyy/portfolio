@@ -54,7 +54,7 @@
     "clsx": "^2.1.1",
     "eslint": "10.4.0",
     "eslint-config-next": "16.2.6",
-    "framer-motion": "^12.39.0",
+    "framer-motion": "^12.40.0",
     "next": "16.2.6",
     "postcss": "8.5.15",
     "react": "19.2.6",
