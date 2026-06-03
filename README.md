@@ -167,12 +167,12 @@ Useful resources and libraries that are used in My Portfolio
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.5
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
 - [@types/node](https://www.npmjs.com/package/@types/node): 25.9.1
-- [@types/react](https://www.npmjs.com/package/@types/react): 19.2.15
+- [@types/react](https://www.npmjs.com/package/@types/react): 19.2.16
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): 19.2.3
 - [@types/react-google-recaptcha](https://www.npmjs.com/package/@types/react-google-recaptcha): ^2.1.9
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@vercel/analytics](https://www.npmjs.com/package/@vercel/analytics): ^2.0.1
-- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.5.0
+- [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.5.1
 - [@vercel/speed-insights](https://www.npmjs.com/package/@vercel/speed-insights): ^2.0.0
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): 10.5.0
 - [baseline-browser-mapping](https://www.npmjs.com/package/baseline-browser-mapping): ^2.10.33
@@ -182,7 +182,7 @@ Useful resources and libraries that are used in My Portfolio
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.40.0
 - [next](https://www.npmjs.com/package/next): 16.2.6
 - [postcss](https://www.npmjs.com/package/postcss): 8.5.15
-- [react](https://www.npmjs.com/package/react): 19.2.6
+- [react](https://www.npmjs.com/package/react): 19.2.7
 - [react-dom](https://www.npmjs.com/package/react-dom): 19.2.6
 - [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha): ^3.1.0
 - [react-hot-toast](https://www.npmjs.com/package/react-hot-toast): ^2.6.0
