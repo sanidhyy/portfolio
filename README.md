@@ -175,9 +175,9 @@ Useful resources and libraries that are used in My Portfolio
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.5.0
 - [@vercel/speed-insights](https://www.npmjs.com/package/@vercel/speed-insights): ^2.0.0
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): 10.5.0
-- [baseline-browser-mapping](https://www.npmjs.com/package/baseline-browser-mapping): ^2.10.32
+- [baseline-browser-mapping](https://www.npmjs.com/package/baseline-browser-mapping): ^2.10.33
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
-- [eslint](https://www.npmjs.com/package/eslint): 10.4.0
+- [eslint](https://www.npmjs.com/package/eslint): 10.4.1
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.2.6
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.40.0
 - [next](https://www.npmjs.com/package/next): 16.2.6
