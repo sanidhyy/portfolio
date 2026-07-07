@@ -53,7 +53,7 @@
     "autoprefixer": "10.5.2",
     "clsx": "^2.1.1",
     "eslint": "10.6.0",
-    "eslint-config-next": "16.2.9",
+    "eslint-config-next": "16.2.10",
     "framer-motion": "^12.42.2",
     "next": "16.2.6",
     "postcss": "8.5.16",
