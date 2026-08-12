@@ -181,7 +181,7 @@ Useful resources and libraries that are used in My Portfolio
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.3.0
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.43.0
 - [next](https://www.npmjs.com/package/next): 16.3.0
-- [postcss](https://www.npmjs.com/package/postcss): 8.5.25
+- [postcss](https://www.npmjs.com/package/postcss): 8.5.26
 - [react](https://www.npmjs.com/package/react): 19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): 19.2.8
 - [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha): ^3.1.0
