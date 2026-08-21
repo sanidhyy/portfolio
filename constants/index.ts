@@ -42,7 +42,7 @@ export const EXTRA_LINKS = {
   github: "https://github.com/sanidhyy",
   resume: "/resume.pdf",
   source_code: "https://github.com/sanidhyy/portfolio",
-  email: "sanidhya.verma12345@gmail.com",
+  email: "sanidhyyy@gmail.com",
 } as const;
 
 // Data for work experience

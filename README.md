@@ -11,7 +11,7 @@
 [![Github commits](https://flat.badgen.net/github/commits/sanidhyy/portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/commits "Github commits")
 [![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/issues "GitHub issues")
 [![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/portfolio/pulls "GitHub pull requests")
-[![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.sanidhy.me/ "Vercel status")
+[![Vercel status](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.sanidhyy.name/ "Vercel status")
 
 <!-- Table of Contents -->
 <details>
@@ -152,7 +152,7 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## :wrench: Stats
 
-[![Stats for My portfolio](/.github/images/stats.svg "Stats for My portfolio")](https://pagespeed.web.dev/analysis?url=https://www.sanidhy.me/ "Stats for My portfolio")
+[![Stats for My portfolio](/.github/images/stats.svg "Stats for My portfolio")](https://pagespeed.web.dev/analysis?url=https://www.sanidhyy.name/ "Stats for My portfolio")
 
 ## :raised_hands: Contribute
 
