@@ -44,7 +44,6 @@
 Here is the folder structure of My Portfolio.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 portfolio/
   |- app/
@@ -82,17 +81,17 @@ portfolio/
   |- .env/.env.local
   |- .eslintrc.json
   |- .gitignore
-  |- bun.lock
   |- environment.d.ts
   |- eslint.config.mjs
   |- next.config.ts
   |- package.json
+  |- pnpm-lock.yaml
+  |- pnpm-workspace.yaml
   |- postcss.config.js
   |- tailwind.config.js
   |- tsconfig.json
   |- vercel.ts
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -173,7 +172,6 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
-
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.6
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
