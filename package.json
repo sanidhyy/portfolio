@@ -2,43 +2,6 @@
   "name": "portfolio",
   "version": "1.1.0",
   "private": true,
-  "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhyyy@gmail.com",
-    "url": "https://github.com/sanidhyy"
-  },
-  "description": "Sanidhya is a full-stack developer with 4 years of experience.",
-  "keywords": [
-    "reactjs",
-    "nextjs",
-    "vercel",
-    "react",
-    "portfolio",
-    "portfolio-next",
-    "emailjs",
-    "framer-motion",
-    "react-hot-toast",
-    "react-icons",
-    "react-intersection-observer",
-    "react-vertical-timeline",
-    "tailwindcss",
-    "ui/ux",
-    "js",
-    "javascript",
-    "typescript",
-    "html",
-    "css"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sanidhyy/portfolio.git"
-  },
-  "homepage": "https://github.com/sanidhyy/portfolio#readme",
-  "bugs": {
-    "url": "https://github.com/sanidhyy/portfolio/issues",
-    "email": "sanidhyyy@gmail.com"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -76,6 +39,44 @@
     "@types/react-google-recaptcha": "^2.1.9",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "baseline-browser-mapping": "^2.11.14"
+  },
+  "packageManager": "pnpm@11.10.0",
+  "author": {
+    "name": "Sanidhya Kumar Verma",
+    "email": "sanidhyyy@gmail.com",
+    "url": "https://github.com/sanidhyy"
+  },
+  "description": "Sanidhya is a full-stack developer with 4 years of experience.",
+  "keywords": [
+    "reactjs",
+    "nextjs",
+    "vercel",
+    "react",
+    "portfolio",
+    "portfolio-next",
+    "emailjs",
+    "framer-motion",
+    "react-hot-toast",
+    "react-icons",
+    "react-intersection-observer",
+    "react-vertical-timeline",
+    "tailwindcss",
+    "ui/ux",
+    "js",
+    "javascript",
+    "typescript",
+    "html",
+    "css"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanidhyy/portfolio.git"
+  },
+  "homepage": "https://github.com/sanidhyy/portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/sanidhyy/portfolio/issues",
+    "email": "sanidhyyy@gmail.com"
   },
   "funding": [
     {
