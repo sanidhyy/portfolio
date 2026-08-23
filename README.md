@@ -44,6 +44,7 @@
 Here is the folder structure of My Portfolio.
 
 <!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 portfolio/
   |- app/
@@ -91,6 +92,7 @@ portfolio/
   |- tsconfig.json
   |- vercel.ts
 ```
+
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -128,11 +130,11 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 9. To get your **Public Key**, click on your username on navbar and go to account settings > Copy Public Key to `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`.
 
-10. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
+10. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `pnpm install --legacy-peer-deps`.
 
 ![Copy Public Key](/.github/images/step_emailjs.png "Copy Public Key")
 
-11. Now app is fully configured :+1: and you can start using this app using `npm run dev` or `yarn dev`.
+11. Now app is fully configured :+1: and you can start using this app using `npm run dev` or `pnpm dev`.
 
 **NOTE:** Ensure you don't share these keys publicly.
 
@@ -171,6 +173,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
+
 - [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.6
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
