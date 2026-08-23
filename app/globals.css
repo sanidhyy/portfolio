@@ -1,6 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
 
 /* react-timeline-vertical-component line color */
 html {
@@ -12,12 +27,11 @@ html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
 }
 
-/* border black */
-.borderBlack {
+@utility borderBlack {
   @apply border border-black/10;
 }
 
 /* Hide reCAPTCHA v2 badge */
 .grecaptcha-badge {
-  @apply invisible;
+  visibility: hidden;
 }

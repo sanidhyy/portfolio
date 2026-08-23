@@ -24,7 +24,7 @@ const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-200 text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -64,7 +64,7 @@ const Intro = () => {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium leading-normal! sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -84,7 +84,7 @@ const Intro = () => {
         <div className="flex gap-2 flex-col sm:flex-row text-lg font-medium">
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-95 transition"
+            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-hidden focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-95 transition"
             onClick={() => {
               // Set the active section and the time of the last click.
               setActiveSection("Contact");
@@ -98,7 +98,7 @@ const Intro = () => {
           <Link
             href={EXTRA_LINKS.resume}
             target="_blank"
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition borderBlack dark:bg-white/10"
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-hidden focus:scale-105 hover:scale-105 active:scale-95 transition borderBlack dark:bg-white/10"
           >
             My Resume
             <HiDownload className="opacity-60 group-hover:translate-y-0.5 transition" />
@@ -109,7 +109,7 @@ const Intro = () => {
             href={EXTRA_LINKS.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.1] hover:scale-[1.1] active:scale-95 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-hidden focus:scale-[1.1] hover:scale-[1.1] active:scale-95 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
             aria-label="Linkedin"
             title="Linkedin"
           >
@@ -120,7 +120,7 @@ const Intro = () => {
             href={EXTRA_LINKS.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.1] hover:scale-[1.1] active:scale-95 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-hidden focus:scale-[1.1] hover:scale-[1.1] active:scale-95 hover:text-gray-950 transition borderBlack dark:bg-white/10 dark:text-white/60"
             aria-label="GitHub"
             title="GitHub"
           >

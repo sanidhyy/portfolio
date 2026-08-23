@@ -167,7 +167,7 @@ const Contact = () => {
           onChange={handleChange}
           disabled={loading}
           placeholder="Your name"
-          className="h-14 rounded-lg px-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 rounded-lg px-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed dark:bg-white/80 dark:focus:bg-white transition-all dark:outline-hidden"
           required
           maxLength={200}
           autoComplete="off"
@@ -182,7 +182,7 @@ const Contact = () => {
           onChange={handleChange}
           disabled={loading}
           placeholder="Your email"
-          className="h-14 rounded-lg my-4 px-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 rounded-lg my-4 px-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed dark:bg-white/80 dark:focus:bg-white transition-all dark:outline-hidden"
           required
           maxLength={100}
           autoComplete="off"
@@ -190,7 +190,7 @@ const Contact = () => {
         />
 
         <textarea
-          className="h-52 rounded-lg mb-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 rounded-lg mb-4 borderBlack disabled:opacity-75 disabled:cursor-not-allowed p-4 dark:bg-white/80 dark:focus:bg-white transition-all dark:outline-hidden"
           name="message"
           id="message"
           value={form.message}
@@ -217,7 +217,7 @@ const Contact = () => {
         {/* Submit button with conditional rendering for loading state. */}
         <button
           type="submit"
-          className="group flex self-center items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 disabled:scale-100 disabled:bg-opacity-65 dark:bg-white dark:bg-opacity-10"
+          className="group flex self-center items-center justify-center gap-2 h-12 w-32 bg-gray-900 text-white rounded-full outline-hidden transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 disabled:scale-100 disabled:bg-gray-900/65 dark:bg-white/10 dark:disabled:bg-white/65"
           disabled={loading}
         >
           {loading ? (
