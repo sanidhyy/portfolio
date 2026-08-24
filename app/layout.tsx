@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "react",
     "portfolio",
     "portfolio-next",
-    "emailjs",
+    "resend",
     "framer-motion",
     "react-hot-toast",
     "react-icons",

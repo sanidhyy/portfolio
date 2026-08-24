@@ -24,7 +24,7 @@ const Footer = () => {
         {/* Provide information about the website and the technologies used. */}
         <b className="font-semibold">About this website:</b> built with React
         &amp; Next.js (App Router and Server Actions), Typescript, Tailwind CSS,
-        Framer Motion, EmailJS, React Toaster, React Vertical Timeline &amp;
+        Framer Motion, Resend, React Toaster, React Vertical Timeline &amp;
         Vercel Hosting.
       </p>
     </footer>
