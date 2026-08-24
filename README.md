@@ -44,9 +44,13 @@
 Here is the folder structure of My Portfolio.
 
 <!--- FOLDER_STRUCTURE_START --->
+
 ```bash
 portfolio/
   |- app/
+    |-- api/
+      |--- contact/
+        |---- route.ts
     |-- apple-icon.png
     |-- favicon.ico
     |-- globals.css
@@ -74,6 +78,7 @@ portfolio/
     |-- active-section-context.tsx
     |-- theme-context.tsx
   |- lib/
+    |-- contact.ts
     |-- hooks.ts
     |-- types.ts
   |- public/
@@ -91,6 +96,7 @@ portfolio/
   |- tsconfig.json
   |- vercel.ts
 ```
+
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -103,36 +109,50 @@ portfolio/
 4. Contents of `.env.local`:
 
 ```env
-# .env.local
-
 # disabled next.js telemetry
-NEXT_TELEMETRY_DISABLED=1
+NEXT_TELEMETRY_DISABLED="1"
 
-# email.js id and key
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_xxxxxxxxxx
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_xxxxxxxxxxxx
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=XXXXXXXXXXXXXXX
+# resend
+RESEND_API_KEY="re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+RESEND_FROM_EMAIL="Your Name <me@example.com>"
+CONTACT_TO_EMAIL="contact@example.com"
+CONTACT_SITE_URL="https://example.com"
+RESEND_TEMPLATE_CONTACT_USER="contact-thank-you"
+RESEND_TEMPLATE_CONTACT_ADMIN="contact-admin"
+
+# google recaptcha v3
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+RECAPTCHA_SECRET_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+RECAPTCHA_MIN_SCORE="0.5"
 
 # google verification key (optional) - used for domain verification on https://search.google.com/search-console
-NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+NEXT_PUBLIC_GOOGLE_VERIFICATION_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ```
 
-5. Create new account in [EmailJS](https://www.emailjs.com/ "EmailJS").
+5. Create an account at [Resend](https://resend.com "Resend") and [add + verify a sending domain](https://resend.com/domains "Resend domains").
 
-6. From dashboard, choose Email Services > Add New Service and connect your mail to emailjs.
+6. Create an API key at [Resend API Keys](https://resend.com/api-keys "Resend API keys") with **Sending access**. Copy it to `RESEND_API_KEY`.
 
-7. Once new service is configured, copy your **Service ID** to `NEXT_PUBLIC_EMAILJS_SERVICE_ID`.
+7. Set `RESEND_FROM_EMAIL` to an address on that verified domain. Set `CONTACT_TO_EMAIL` to the inbox that should receive new contact notifications. Set `CONTACT_SITE_URL` to your site's public URL.
 
-8. Now, go to Email Templates > Create New Template to create your mail template. Once it is done, you can copy **Template ID** to `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`.
+8. In [Resend Templates](https://resend.com/templates "Resend templates"), create **two** templates and **Publish** each.
 
-9. To get your **Public Key**, click on your username on navbar and go to account settings > Copy Public Key to `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`.
+   **Template 1 — thank you to the user**
+   - Name: `contact-thank-you`
+   - Variables: `USER_NAME`, `USER_MESSAGE`, `SITE_URL`
+
+   **Template 2 — new message to admin**
+   - Name: `contact-admin`
+   - Variables: `USER_NAME`, `USER_EMAIL`, `USER_MESSAGE`, `SITE_URL`
+
+   Copy each template's alias into `RESEND_TEMPLATE_CONTACT_USER` and `RESEND_TEMPLATE_CONTACT_ADMIN`.
+
+9. Create **new** [Google reCAPTCHA v3](https://www.google.com/recaptcha/admin/create "Google reCAPTCHA") project. Choose **Score based (v3)**, add your production domain(s) **and** `localhost`, then copy the **Site key** to `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` and the **Secret key** to `RECAPTCHA_SECRET_KEY`.
 
 10. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `pnpm install --legacy-peer-deps`.
 
-![Copy Public Key](/.github/images/step_emailjs.png "Copy Public Key")
-
-11. Now app is fully configured :+1: and you can start using this app using `npm run dev` or `pnpm dev`.
+11. Now the app is fully configured :+1: and you can start it with `npm run dev` or `pnpm dev`.
 
 **NOTE:** Ensure you don't share these keys publicly.
 
@@ -171,14 +191,13 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
-- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
+
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.6
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
 - [@tailwindcss/postcss](https://www.npmjs.com/package/@tailwindcss/postcss): ^4.3.3
 - [@types/node](https://www.npmjs.com/package/@types/node): 26.2.0
 - [@types/react](https://www.npmjs.com/package/@types/react): 19.2.18
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): 19.2.4
-- [@types/react-google-recaptcha](https://www.npmjs.com/package/@types/react-google-recaptcha): ^2.1.9
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
 - [@vercel/analytics](https://www.npmjs.com/package/@vercel/analytics): ^2.0.1
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.6.1
@@ -192,11 +211,12 @@ Useful resources and libraries that are used in My Portfolio
 - [postcss](https://www.npmjs.com/package/postcss): 8.5.26
 - [react](https://www.npmjs.com/package/react): 19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): 19.2.8
-- [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha): ^3.1.0
+- [react-google-recaptcha-v3](https://www.npmjs.com/package/react-google-recaptcha-v3): ^1.11.0
 - [react-hot-toast](https://www.npmjs.com/package/react-hot-toast): ^2.6.0
 - [react-icons](https://www.npmjs.com/package/react-icons): ^5.7.0
 - [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer): ^11.0.0
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
+- [resend](https://www.npmjs.com/package/resend): ^6.22.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): 4.3.3
 - [typescript](https://www.npmjs.com/package/typescript): 6.0.3
 

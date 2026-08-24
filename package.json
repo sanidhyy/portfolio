@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/postcss": "^4.3.3",
     "@vercel/analytics": "^2.0.1",
     "@vercel/config": "^0.6.1",
@@ -22,11 +21,12 @@
     "postcss": "8.5.26",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "react-google-recaptcha": "^3.1.0",
+    "react-google-recaptcha-v3": "^1.11.0",
     "react-hot-toast": "^2.6.0",
     "react-icons": "^5.7.0",
     "react-intersection-observer": "^11.0.0",
     "react-vertical-timeline-component": "^4.0.0",
+    "resend": "^6.22.0",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3"
   },
@@ -36,7 +36,6 @@
     "@types/node": "26.2.0",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.4",
-    "@types/react-google-recaptcha": "^2.1.9",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "baseline-browser-mapping": "^2.11.14"
   },
@@ -54,7 +53,7 @@
     "react",
     "portfolio",
     "portfolio-next",
-    "emailjs",
+    "resend",
     "framer-motion",
     "react-hot-toast",
     "react-icons",
