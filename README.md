@@ -44,13 +44,10 @@
 Here is the folder structure of My Portfolio.
 
 <!--- FOLDER_STRUCTURE_START --->
-
 ```bash
 portfolio/
   |- app/
     |-- api/
-      |--- contact/
-        |---- route.ts
     |-- apple-icon.png
     |-- favicon.ico
     |-- globals.css
@@ -96,7 +93,6 @@ portfolio/
   |- tsconfig.json
   |- vercel.ts
 ```
-
 <!--- FOLDER_STRUCTURE_END --->
 
 <br />
@@ -191,7 +187,6 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
-
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.6
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
 - [@tailwindcss/postcss](https://www.npmjs.com/package/@tailwindcss/postcss): ^4.3.3
