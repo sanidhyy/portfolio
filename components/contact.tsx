@@ -165,6 +165,9 @@ const ContactForm = () => {
           </>
         )}
       </button>
+      <p className="mt-3 text-xs text-gray-500 dark:text-white/40">
+        This site is protected by reCAPTCHA.
+      </p>
     </form>
   );
 };
@@ -213,7 +216,9 @@ const Contact = () => {
           <ContactForm />
         </GoogleReCaptchaProvider>
       ) : (
-        <ContactForm />
+        <p className="mt-6 text-gray-700 dark:text-white/80">
+          Contact form is currently unavailable.
+        </p>
       )}
     </motion.section>
   );
