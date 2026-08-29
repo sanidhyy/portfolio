@@ -200,7 +200,7 @@ Useful resources and libraries that are used in My Portfolio
 - [baseline-browser-mapping](https://www.npmjs.com/package/baseline-browser-mapping): ^2.11.14
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
 - [eslint](https://www.npmjs.com/package/eslint): 10.9.0
-- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.3.2
+- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.3.3
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^13.1.0
 - [next](https://www.npmjs.com/package/next): 16.3.2
 - [postcss](https://www.npmjs.com/package/postcss): 8.5.26
