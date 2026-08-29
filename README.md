@@ -190,7 +190,7 @@ Useful resources and libraries that are used in My Portfolio
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.6
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
 - [@tailwindcss/postcss](https://www.npmjs.com/package/@tailwindcss/postcss): ^4.3.3
-- [@types/node](https://www.npmjs.com/package/@types/node): 26.2.0
+- [@types/node](https://www.npmjs.com/package/@types/node): 26.3.0
 - [@types/react](https://www.npmjs.com/package/@types/react): 19.2.18
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): 19.2.4
 - [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
