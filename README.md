@@ -202,7 +202,7 @@ Useful resources and libraries that are used in My Portfolio
 - [eslint](https://www.npmjs.com/package/eslint): 10.9.0
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.3.3
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^13.1.0
-- [next](https://www.npmjs.com/package/next): 16.3.2
+- [next](https://www.npmjs.com/package/next): 16.3.3
 - [postcss](https://www.npmjs.com/package/postcss): 8.5.26
 - [react](https://www.npmjs.com/package/react): 19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): 19.2.8
