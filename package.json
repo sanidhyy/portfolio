@@ -24,7 +24,7 @@
     "react-google-recaptcha-v3": "^1.11.0",
     "react-hot-toast": "^2.6.0",
     "react-icons": "^5.7.0",
-    "react-intersection-observer": "^11.0.0",
+    "react-intersection-observer": "^11.0.1",
     "react-vertical-timeline-component": "^4.0.0",
     "resend": "^6.22.1",
     "tailwindcss": "4.3.3",
