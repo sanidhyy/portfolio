@@ -187,7 +187,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and libraries that are used in My Portfolio
 
 <!--- DEPENDENCIES_START --->
-- [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.6
+- [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3.3.7
 - [@eslint/js](https://www.npmjs.com/package/@eslint/js): ^10.0.1
 - [@tailwindcss/postcss](https://www.npmjs.com/package/@tailwindcss/postcss): ^4.3.3
 - [@types/node](https://www.npmjs.com/package/@types/node): 26.3.0
@@ -202,16 +202,16 @@ Useful resources and libraries that are used in My Portfolio
 - [eslint](https://www.npmjs.com/package/eslint): 10.9.1
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.3.4
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^13.1.0
-- [next](https://www.npmjs.com/package/next): 16.3.3
+- [next](https://www.npmjs.com/package/next): 16.3.4
 - [postcss](https://www.npmjs.com/package/postcss): 8.5.26
 - [react](https://www.npmjs.com/package/react): 19.2.8
 - [react-dom](https://www.npmjs.com/package/react-dom): 19.2.8
 - [react-google-recaptcha-v3](https://www.npmjs.com/package/react-google-recaptcha-v3): ^1.11.0
 - [react-hot-toast](https://www.npmjs.com/package/react-hot-toast): ^2.6.0
 - [react-icons](https://www.npmjs.com/package/react-icons): ^5.7.0
-- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer): ^11.0.0
+- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer): ^11.0.1
 - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^4.0.0
-- [resend](https://www.npmjs.com/package/resend): ^6.22.1
+- [resend](https://www.npmjs.com/package/resend): ^6.25.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): 4.3.3
 - [typescript](https://www.npmjs.com/package/typescript): 6.0.3
 
